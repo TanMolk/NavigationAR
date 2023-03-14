@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<QCARInfo>
+    <TargetSet version="3.4">
+        <AreaTarget version="5.1" bbox="-1.5385 -2.1657 -12.4647 25.5873 1.0141 2.7199" targetId="2522a18b154e4f5196cf214418f621b1" name="SoerHallway" pathAuthoring="2522a18b154e4f5196cf214418f621b1_authoring.glb" pathOcclusion="2522a18b154e4f5196cf214418f621b1_occlusion.3dt" pathNavMesh="2522a18b154e4f5196cf214418f621b1_navmesh.glb" cloudTarget="false" />
+    </TargetSet>
+</QCARInfo>

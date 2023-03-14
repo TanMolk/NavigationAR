@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<QCARInfo>
+    <TargetSet version="3.4">
+        <AreaTarget version="5.1" bbox="-5.5148 -2.3880 -4.6414 0.8007 1.3039 1.5296" targetId="bc52386eeff749699cf3f4001af38127" name="room1" pathAuthoring="bc52386eeff749699cf3f4001af38127_authoring.glb" pathOcclusion="bc52386eeff749699cf3f4001af38127_occlusion.3dt" pathNavMesh="bc52386eeff749699cf3f4001af38127_navmesh.glb" cloudTarget="false" />
+    </TargetSet>
+</QCARInfo>

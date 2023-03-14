@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<QCARInfo>
+    <TargetSet version="3.4">
+        <AreaTarget version="5.1" bbox="-5.5728 -2.8329 -4.6910 0.5473 1.2778 2.2353" targetId="7173c3bf877e4b599d9bfb0f7550a4ef" name="MyHaven" pathAuthoring="7173c3bf877e4b599d9bfb0f7550a4ef_authoring.glb" pathOcclusion="7173c3bf877e4b599d9bfb0f7550a4ef_occlusion.3dt" pathNavMesh="7173c3bf877e4b599d9bfb0f7550a4ef_navmesh.glb" cloudTarget="false" />
+    </TargetSet>
+</QCARInfo>
