@@ -59,10 +59,17 @@
     <Compile Include="Assets\Editor\Migration\AddVuforiaEnginePackage.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Editor\Vuforia\Scan1\authoringinfo.xml" />
+    <None Include="Assets\Editor\Vuforia\xrfloor\authoringinfo.xml" />
+    <None Include="Assets\Editor\Vuforia\Scan3\authoringinfo.xml" />
+    <None Include="Assets\Editor\Vuforia\XRScan2\authoringinfo.xml" />
     <None Include="Assets\Editor\Vuforia\SoerHallway\authoringinfo.xml" />
+    <None Include="Assets\Editor\Vuforia\XRScan1\authoringinfo.xml" />
+    <None Include="Assets\Editor\Vuforia\Scan2\authoringinfo.xml" />
     <None Include="Assets\Editor\Vuforia\hallway1_authoring_target\authoringinfo.xml" />
     <None Include="Assets\Editor\Vuforia\MyHaven\authoringinfo.xml" />
     <None Include="Assets\Editor\Vuforia\room1\authoringinfo.xml" />
+    <None Include="Assets\Editor\Vuforia\XRScan3\authoringinfo.xml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
