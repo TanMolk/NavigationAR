@@ -3,13 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using Vuforia;
+using UnityEngine.UI;
 public class NavMeshPathDisplayTest : MonoBehaviour
 {
     public NavMeshAgent agent;
     public LineRenderer lineRenderer;
-    public Transform StartPoint;
-    public Transform EndPoint;
+    public Transform startPoint;
+    Transform endPoint;
     NavMeshPath path;
+
+    public Button roomButton;
+    public Button bathroomButton;
+    public Button entranceButton;
+    public Transform roomLoc;
+    public Transform bathroomLoc;
+    public Transform entranceLoc;
+    bool isRoom;
+    bool isBathroom;
+    bool isEntrance;
     
     float elapsed;
     
@@ -24,43 +35,82 @@ public class NavMeshPathDisplayTest : MonoBehaviour
         lineRenderer.endColor = Color.red;
         lineRenderer.enabled = true;
         path = new NavMeshPath();
+       
+        
+        roomButton.onClick.AddListener(OnClickRoom);
+        bathroomButton.onClick.AddListener(OnClickBathroom);
+        entranceButton.onClick.AddListener(OnClickEntrance);
     }
 
     // Update is called once per frame
     void Update()
     {
-         NavMeshPath path = new NavMeshPath();
-         if (NavMesh.CalculatePath(StartPoint.position, EndPoint.position, NavMesh.AllAreas, path))
-         {
-             lineRenderer.positionCount = path.corners.Length;
-             for (int i = 0; i < path.corners.Length; i++)
-             {
-                 lineRenderer.SetPosition(i, path.corners[i]);
-             }
-         }
-
-       /* StartCoroutine(DrawPath(path));
-        elapsed += Time.deltaTime;
-        if (elapsed > 0.1f) 
+        NavMeshPath path = new NavMeshPath();
+        if (isRoom)
         {
-            elapsed -= 0.1f;
-            NavMesh.CalculatePath(StartPoint.position, EndPoint.position, NavMesh.AllAreas, path);
+            
+            if (NavMesh.CalculatePath(startPoint.position, roomLoc.position, NavMesh.AllAreas, path))
+            {
+                lineRenderer.positionCount = path.corners.Length;
+                for (int i = 0; i < path.corners.Length; i++)
+                {
+                    lineRenderer.SetPosition(i, path.corners[i]);
+                }
+            }
+
         }
-*/
+        if (isBathroom)
+        {
+            if (NavMesh.CalculatePath(startPoint.position, bathroomLoc.position, NavMesh.AllAreas, path))
+            {
+                lineRenderer.positionCount = path.corners.Length;
+                for (int i = 0; i < path.corners.Length; i++)
+                {
+                    lineRenderer.SetPosition(i, path.corners[i]);
+                }
+            }
+        }
+
+        if (isEntrance)
+        {
+            if (NavMesh.CalculatePath(startPoint.position, entranceLoc.position, NavMesh.AllAreas, path))
+            {
+                lineRenderer.positionCount = path.corners.Length;
+                for (int i = 0; i < path.corners.Length; i++)
+                {
+                    lineRenderer.SetPosition(i, path.corners[i]);
+                }
+            }
+        }
+      
+
       
     }
 
-    IEnumerator DrawPath(NavMeshPath path)
+    public void OnClickRoom()
     {
-        yield return new WaitForEndOfFrame();
-        if (path.corners.Length < 2)
-            yield break;
-        lineRenderer.positionCount = path.corners.Length;
+        isRoom = true;
+        isBathroom = false;
+        isEntrance = false;
+       
+   
 
-        for(var i=1; i< path.corners.Length; i++)
-        {
-            Vector3 linePosition = new Vector3(path.corners[i].x, path.corners[i].y, path.corners[i].z);
-            lineRenderer.SetPosition(i, linePosition);
-        }
     }
+    public void OnClickBathroom()
+    {
+        isRoom = false;
+        isBathroom = true;
+        isEntrance = false;
+        
+
+    }
+    public void OnClickEntrance()
+    {
+        isRoom = false;
+        isBathroom = false;
+        isEntrance = true;
+        
+    }
+
+    
 }

@@ -1,4 +1,4 @@
-com.DefaultCompany.NavigationAR
+com.vuforia.engine.coresamples
 id __arcore_cancelButton
 id __arcore_continueButton
 id __arcore_messageText

@@ -6,11 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/XRFloorNavigation.unity
+    guid: dd8635f77ce23ea4bad7ba114e6e1f48
   m_configObjects:
-    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: ba01cbed870e72f409cf8f9372ad8bdf, type: 2}
-    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: aed0624c3ea872543bc35074201af48d, type: 2}
-    com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: 31f0e446b091f044698d1f5510ee7f8e, type: 2}
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: f52267a90a298a94c9a8dd37652fd40a, type: 2}
-    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 2406acbfa1305854aa67cc9886a2280b, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: f52267a90a298a94c9a8dd37652fd40a,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 2406acbfa1305854aa67cc9886a2280b,
+      type: 2}

@@ -40,7 +40,7 @@ public class DefaultObserverEventHandler : MonoBehaviour
     public UnityEvent OnTargetFound;
     public UnityEvent OnTargetLost;
 
-
+    
     protected ObserverBehaviour mObserverBehaviour;
     protected TargetStatus mPreviousTargetStatus = TargetStatus.NotObserved;
     protected bool mCallbackReceivedOnce;

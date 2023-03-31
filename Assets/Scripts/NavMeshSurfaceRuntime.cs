@@ -13,6 +13,11 @@ public class NavMeshSurfaceRuntime : MonoBehaviour
     private void Start()
     {
         rebakeNavmesh.onClick.AddListener(RebakeNavmesh);
+        for (int i = 0; i < navMeshSurfaces.Length; i++)
+        {
+            navMeshSurfaces[i].BuildNavMesh();
+        }
+
     }
 
     private void Update()

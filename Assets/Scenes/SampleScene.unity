@@ -350,22 +350,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PreviewVisible: 1
-  RuntimeOcclusion: 0
-  RuntimeCollider: 0
-  mTrackableName: --- EMPTY ---
+  RuntimeOcclusion: 1
+  RuntimeCollider: 1
+  mTrackableName: Scan1
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/--- EMPTY ---.xml
-  AuthoringModelPath: 
-  OcclusionModelPath: 
-  ClipHeight: 1.05
+  mDataSetPath: Vuforia/Scan1.xml
+  AuthoringModelPath: e270d41feef34cbeb99e9cf14cd7efd5_authoring.glb
+  OcclusionModelPath: e270d41feef34cbeb99e9cf14cd7efd5_occlusion.3dt
+  ClipHeight: 0.841265
   mSize: {x: 0, y: 0, z: 0}
   mBoundingBox:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
-  mNavMeshModelPath: 
-  mVersion: 
-  mBBoxMin: {x: 0, y: 0, z: 0}
-  mBBoxMax: {x: 1, y: 1, z: 1}
+  mNavMeshModelPath: e270d41feef34cbeb99e9cf14cd7efd5_navmesh.glb
+  mVersion: 5.1
+  mBBoxMin: {x: -1.9301, y: -2.8078, z: -32.1519}
+  mBBoxMax: {x: 3.6776, y: 0.6675, z: -26.2351}
   mModelMesh: {fileID: 0}
   mRequiresExternalPositions: 0
   mPreview: {fileID: 264183265}
@@ -398,7 +398,7 @@ GameObject:
   - component: {fileID: 281927019}
   - component: {fileID: 281927022}
   - component: {fileID: 281927021}
-  - component: {fileID: 281927020}
+  - component: {fileID: 281927023}
   m_Layer: 0
   m_Name: AreaTarget
   m_TagString: Untagged
@@ -422,24 +422,6 @@ Transform:
   m_Father: {fileID: 964704525}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &281927020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 281927018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1973558268, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 281927022}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: XRScan3
-  mDatasetName: Vuforia/XRScan3.xml
-  mCastedBehaviour: {fileID: 281927022}
-  mType: 1
 --- !u!114 &281927021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -497,8 +479,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PreviewVisible: 1
-  RuntimeOcclusion: 0
-  RuntimeCollider: 0
+  RuntimeOcclusion: 1
+  RuntimeCollider: 1
   mTrackableName: XRScan3
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/XRScan3.xml
@@ -515,7 +497,25 @@ MonoBehaviour:
   mBBoxMax: {x: 14.1107, y: 0.2016, z: 8.5124}
   mModelMesh: {fileID: 0}
   mRequiresExternalPositions: 0
-  mPreview: {fileID: 281927020}
+  mPreview: {fileID: 281927023}
+--- !u!114 &281927023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281927018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1973558268, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 281927022}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: XRScan3
+  mDatasetName: Vuforia/XRScan3.xml
+  mCastedBehaviour: {fileID: 281927022}
+  mType: 1
 --- !u!1 &284980391
 GameObject:
   m_ObjectHideFlags: 0
@@ -527,7 +527,7 @@ GameObject:
   - component: {fileID: 284980392}
   - component: {fileID: 284980395}
   - component: {fileID: 284980394}
-  - component: {fileID: 284980393}
+  - component: {fileID: 284980396}
   m_Layer: 0
   m_Name: AreaTarget
   m_TagString: Untagged
@@ -551,24 +551,6 @@ Transform:
   m_Father: {fileID: 964704525}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &284980393
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 284980391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1973558268, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 284980395}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: XRScan2
-  mDatasetName: Vuforia/XRScan2.xml
-  mCastedBehaviour: {fileID: 284980395}
-  mType: 1
 --- !u!114 &284980394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -626,8 +608,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PreviewVisible: 1
-  RuntimeOcclusion: 0
-  RuntimeCollider: 0
+  RuntimeOcclusion: 1
+  RuntimeCollider: 1
   mTrackableName: XRScan2
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/XRScan2.xml
@@ -644,7 +626,25 @@ MonoBehaviour:
   mBBoxMax: {x: 15.2233, y: 0.4201, z: 15.9704}
   mModelMesh: {fileID: 0}
   mRequiresExternalPositions: 0
-  mPreview: {fileID: 284980393}
+  mPreview: {fileID: 284980396}
+--- !u!114 &284980396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284980391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1973558268, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 284980395}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: XRScan2
+  mDatasetName: Vuforia/XRScan2.xml
+  mCastedBehaviour: {fileID: 284980395}
+  mType: 1
 --- !u!1 &434577340
 GameObject:
   m_ObjectHideFlags: 0
@@ -657,7 +657,7 @@ GameObject:
   - component: {fileID: 434577344}
   - component: {fileID: 434577343}
   - component: {fileID: 434577342}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -672,7 +672,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 434577340}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.18, y: -1.11, z: -47.14}
+  m_LocalPosition: {x: 7.684, y: -1.527, z: -43.93}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1159,7 +1159,7 @@ Camera:
   m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 2147483647
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -1179,7 +1179,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 584881201}
   m_LocalRotation: {x: 0, y: 0.98874336, z: -0, w: -0.1496216}
-  m_LocalPosition: {x: -0.648, y: -1.62, z: -28.457}
+  m_LocalPosition: {x: -1.05, y: -1.04, z: -28.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1223,7 +1223,7 @@ MonoBehaviour:
   agent: {fileID: 584881207}
   lineRenderer: {fileID: 584881209}
   StartPoint: {fileID: 584881206}
-  EndPoint: {fileID: 899296428}
+  EndPoint: {fileID: 434577341}
 --- !u!120 &584881209
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -1266,8 +1266,8 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 1}
+  - {x: 0, y: 1, z: 0}
+  - {x: 0, y: 1, z: 1}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -2025,7 +2025,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &964704525
 Transform:
   m_ObjectHideFlags: 0
@@ -2189,6 +2189,7 @@ GameObject:
   - component: {fileID: 1000968918}
   - component: {fileID: 1000968917}
   - component: {fileID: 1000968916}
+  - component: {fileID: 1000968919}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2209,9 +2210,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   navMeshSurfaces:
-  - {fileID: 725238654}
-  - {fileID: 526641745}
-  - {fileID: 2031751124}
+  - {fileID: 1550047403}
+  - {fileID: 1206155048}
+  - {fileID: 1223867704}
   rebakeNavmesh: {fileID: 1093435518}
 --- !u!114 &1000968917
 MonoBehaviour:
@@ -2246,6 +2247,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1000968919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000968915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc7c619a9e518bd4f96671c1a19dcf6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1058681359
 GameObject:
   m_ObjectHideFlags: 0
@@ -2863,7 +2876,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.033333335
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: 55a37565effab744b87e0b44967e7b14, type: 2}
+  m_NavMeshData: {fileID: 0}
 --- !u!1001 &1223867701
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3023,7 +3036,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.033333335
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: 0f4ce120967403e458b739af5c8cb59a, type: 2}
+  m_NavMeshData: {fileID: 0}
 --- !u!1001 &1550047399
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3180,7 +3193,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.033333335
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: 12dc5c4f65e0b0c48a2f0c5d0560c3f1, type: 2}
+  m_NavMeshData: {fileID: 0}
 --- !u!1 &1652316682
 GameObject:
   m_ObjectHideFlags: 0
@@ -3273,22 +3286,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PreviewVisible: 1
-  RuntimeOcclusion: 0
-  RuntimeCollider: 0
-  mTrackableName: --- EMPTY ---
+  RuntimeOcclusion: 1
+  RuntimeCollider: 1
+  mTrackableName: Scan2
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/--- EMPTY ---.xml
-  AuthoringModelPath: 
-  OcclusionModelPath: 
-  ClipHeight: 1.05
+  mDataSetPath: Vuforia/Scan2.xml
+  AuthoringModelPath: 89ee74c49b1748b4b905bbad55c32a89_authoring.glb
+  OcclusionModelPath: 89ee74c49b1748b4b905bbad55c32a89_occlusion.3dt
+  ClipHeight: 0.99863005
   mSize: {x: 0, y: 0, z: 0}
   mBoundingBox:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
-  mNavMeshModelPath: 
-  mVersion: 
-  mBBoxMin: {x: 0, y: 0, z: 0}
-  mBBoxMax: {x: 1, y: 1, z: 1}
+  mNavMeshModelPath: 89ee74c49b1748b4b905bbad55c32a89_navmesh.glb
+  mVersion: 5.1
+  mBBoxMin: {x: -10.3654, y: -4.2121, z: -46.5796}
+  mBBoxMax: {x: 3.9701, y: 0.7505, z: -29.9839}
   mModelMesh: {fileID: 0}
   mRequiresExternalPositions: 0
   mPreview: {fileID: 1652316687}
@@ -3321,7 +3334,7 @@ GameObject:
   - component: {fileID: 1772407897}
   - component: {fileID: 1772407900}
   - component: {fileID: 1772407899}
-  - component: {fileID: 1772407898}
+  - component: {fileID: 1772407901}
   m_Layer: 0
   m_Name: AreaTarget
   m_TagString: Untagged
@@ -3345,24 +3358,6 @@ Transform:
   m_Father: {fileID: 964704525}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1772407898
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1772407896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1973558268, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1772407900}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: XRScan1
-  mDatasetName: Vuforia/XRScan1.xml
-  mCastedBehaviour: {fileID: 1772407900}
-  mType: 1
 --- !u!114 &1772407899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3420,8 +3415,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PreviewVisible: 1
-  RuntimeOcclusion: 0
-  RuntimeCollider: 0
+  RuntimeOcclusion: 1
+  RuntimeCollider: 1
   mTrackableName: XRScan1
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/XRScan1.xml
@@ -3438,7 +3433,25 @@ MonoBehaviour:
   mBBoxMax: {x: 20.0035, y: 1.4392, z: 35.4432}
   mModelMesh: {fileID: 0}
   mRequiresExternalPositions: 0
-  mPreview: {fileID: 1772407898}
+  mPreview: {fileID: 1772407901}
+--- !u!114 &1772407901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772407896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1973558268, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1772407900}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: XRScan1
+  mDatasetName: Vuforia/XRScan1.xml
+  mCastedBehaviour: {fileID: 1772407900}
+  mType: 1
 --- !u!1001 &2031751121
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3655,7 +3668,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2081639658
 Transform:
   m_ObjectHideFlags: 0

@@ -118,6 +118,7 @@
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
+-define:VUFORIA_ANDROID_SETTINGS
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
@@ -351,8 +352,11 @@
 -r:"C:/Users/rbhattac/Documents/NavigationAR/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/EditorAssetResources/Unity.VisualScripting.TextureAssets.dll"
 -r:"C:/Users/rbhattac/Documents/NavigationAR/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Assembly-CSharp.ref.dll"
+-r:"Library/Bee/artifacts/1300b0aE.dag/CommonEditor.ref.dll"
+-r:"Library/Bee/artifacts/1300b0aE.dag/CommonScripts.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/NavMeshComponents.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/NavMeshComponentsEditor.ref.dll"
+-r:"Library/Bee/artifacts/1300b0aE.dag/SamplesScripts.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Unity.InputSystem.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
@@ -408,8 +412,10 @@
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.XR.LegacyInputHelpers.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.XR.MagicLeap.ref.dll"
+-r:"Library/Bee/artifacts/1300b0aE.dag/VFXCore.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/VuforiaEditorScripts.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/VuforiaScripts.ref.dll"
+-r:"Library/Bee/artifacts/1300b0aE.dag/VuforiaVersionCheckerScripts.ref.dll"
 "Assets/Editor/Migration/AddVuforiaEnginePackage.cs"
 -langversion:9.0
 

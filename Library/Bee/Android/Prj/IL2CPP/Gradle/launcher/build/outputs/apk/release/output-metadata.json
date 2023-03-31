@@ -4,15 +4,15 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.DefaultCompany.NavigationAR",
+  "applicationId": "com.vuforia.engine.coresamples",
   "variantName": "release",
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
       "properties": [],
-      "versionCode": 1,
-      "versionName": "0.1",
+      "versionCode": 10133,
+      "versionName": "10.13.3",
       "enabled": true,
       "outputFile": "launcher-release.apk"
     }
